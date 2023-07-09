@@ -1,0 +1,13 @@
+<mat-card class="w-full  h-auto">
+<mat-card-header>
+ <button  class="text-blue-400" mat-button   (click)="ChnageTitle()" *ngIf="!(change | async)">{{title}}</button>
+  <form [formGroup]="titleChange" class="flex gap-1 " *ngIf="(change | async)"><input class="clear-input h-1/4" matInput formControlName="title" placeholder="title"><app-boutton class="h-1/4" [stateview]="submit" (click)="onSubmit()"></app-boutton></form>
+</mat-card-header>
+  <mat-card-content *ngFor="let task of tasks">
+<app-task [description]="task"></app-task>
+  </mat-card-content>
+<mat-card-content>
+  <form [formGroup]="task"  class="flex gap-1 h-30 " *ngIf="add"><input class="clear-input h-30" matInput formControlName="description" placeholder="description"><app-boutton class="h-1/8" [stateview]="submit" (click)="addTasks()"></app-boutton></form>
+  <app-add-task *ngIf="!add" (click)="addTask()" class="w-full"></app-add-task>
+</mat-card-content>
+</mat-card>

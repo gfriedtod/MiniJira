@@ -1,0 +1,15 @@
+*{
+  background-color: white;
+  border-radius: 10px;
+}
+
+mat-card{
+
+  transition: transform ease-in 0.3s , box-shadow ease-in-out 0.5s;
+}
+
+mat-card:hover{
+  box-shadow: 0 0 20px 0 rgba(95, 149, 183, 1);
+  transform: translateY(-10px);
+
+}
