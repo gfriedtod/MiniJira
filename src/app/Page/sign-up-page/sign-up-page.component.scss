@@ -1,0 +1,61 @@
+mat-card{
+  gap: 50px;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 850px;
+  align-self: center;
+  margin: 0 auto;
+  mat-card-header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 20%;
+    mat-card-title{
+      font-size: 30px;
+    }
+  }
+  mat-card-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    form{
+      width: 100%;
+      align-self: center;
+      height: 100%;
+      mat-form-field{
+        width: 90%;
+        align-self: center;
+      }
+
+    }
+
+    app-boutton{
+      align-self: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+input{
+  align-self: center;
+  width: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100% ;
+  background:url("/assets/building6.jpg"), linear-gradient( 90deg ,rgb(58, 134, 194) 0%, rgba(135, 182, 234, 0) 100%);
+  background-size: cover;
+  height: 100%;
+}
+
+h1{
+  font-size: 25px;
+}

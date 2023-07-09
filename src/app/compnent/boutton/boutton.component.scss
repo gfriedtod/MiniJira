@@ -1,0 +1,35 @@
+.btn{
+
+  background-color: #3A5CEE;
+
+  height: 100%;
+width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 10;
+
+
+  border-radius: 10px;
+  color: white;
+
+  transition: background-color ease-in-out 0.5s;
+
+  //p{
+  //  margin-left: 5%;
+  //  margin-right: 5%;
+  //  font-size: 100%;
+  //
+  //}
+}
+
+
+
+.secondView{
+
+  color: black;
+  background-color: white;
+
+  transition: background-color ease-in-out 0.5s;
+}
